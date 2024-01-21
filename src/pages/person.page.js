@@ -1,34 +1,25 @@
 import React from "react";
-import axios from 'axios';
 import { useMatches } from "react-router-dom";
+import {useDispatch, useSelector} from "react-redux";
+import {personAction} from "../app/actions/personAction";
+import {getPerson} from "../app/selectors/person.selector";
 
 const Person = () => {
   const matches = useMatches();
-  const id = matches[0].params.id;
-  console.log(matches);
-  const [person, setPerson] = React.useState([]);
-  const getPerson = () => {
-    axios
-      .get(`http://localhost:3000/people/${id}`)
-      .then((result) => {
-        setPerson(result.data);
-        console.log(result);
-      })
-      .catch((err) => {
-        setPerson([err]);
-      });
-  };
-  React.useEffect(() => {
-    getPerson();
-  }, []);
+  const dispatch = useDispatch();
 
+  React.useEffect(() => {
+    const id = matches[0].params.id;
+    dispatch(personAction(id));
+    }, []);
+const person = useSelector(getPerson);
   return (
     <table>
       <tr>
-        <td>{person.firstName}</td>
-        <td>{person.lastName}</td>
-        <td>{person.dob}</td>
-        <td>{person.gender}</td>
+        <td>{person?.firstName}</td>
+        <td>{person?.lastName}</td>
+        <td>{person?.dob}</td>
+        <td>{person?.gender}</td>
       </tr>
     </table>
   );

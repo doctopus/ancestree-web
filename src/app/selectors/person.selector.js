@@ -1,3 +1,3 @@
-const getPerson = ({people}) => people.items
+const getPerson = ({person}) => person.item
 
 export { getPerson };

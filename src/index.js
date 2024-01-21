@@ -7,6 +7,8 @@ import { People } from './pages/people.page'
 import { Person } from './pages/person.page'
 import { Home } from './pages/home'
 import reportWebVitals from './reportWebVitals'
+import {Provider} from "react-redux";
+import {store} from './app/store';
 
 const router = createBrowserRouter([
   {
@@ -32,7 +34,9 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
+    <Provider store={store}>
     <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>
 )
 

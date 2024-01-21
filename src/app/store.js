@@ -7,4 +7,6 @@ const store = configureStore({
         people: peopleReducer,
         person: personReducer,
     }
-})
+});
+
+export { store };
