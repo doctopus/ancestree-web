@@ -1,0 +1,24 @@
+{
+  "people": [
+    { "id": 1, "firstName": "John", "lastName": "Doe", "dob": "1980-05-15", "gender": "Male" },
+    { "id": 2, "firstName": "Jane", "lastName": "Doe", "dob": "1982-08-23", "gender": "Female" },
+    { "id": 3, "firstName": "Michael", "lastName": "Smith", "dob": "1975-03-10", "gender": "Male" },
+    { "id": 4, "firstName": "Emily", "lastName": "Johnson", "dob": "1990-12-02", "gender": "Female" },
+    { "id": 5, "firstName": "David", "lastName": "Williams", "dob": "1988-06-18", "gender": "Male" },
+    { "id": 6, "firstName": "Sophia", "lastName": "Brown", "dob": "1995-09-27", "gender": "Female" },
+    { "id": 7, "firstName": "Christopher", "lastName": "Jones", "dob": "1984-04-14", "gender": "Male" },
+    { "id": 8, "firstName": "Olivia", "lastName": "Miller", "dob": "1992-11-08", "gender": "Female" },
+    { "id": 9, "firstName": "Daniel", "lastName": "Davis", "dob": "1986-07-20", "gender": "Male" },
+    { "id": 10, "firstName": "Emma", "lastName": "Anderson", "dob": "1998-02-03", "gender": "Female" },
+    { "id": 11, "firstName": "Ryan", "lastName": "Taylor", "dob": "1983-10-05", "gender": "Male" },
+    { "id": 12, "firstName": "Ava", "lastName": "Thomas", "dob": "1993-06-12", "gender": "Female" },
+    { "id": 13, "firstName": "Matthew", "lastName": "Martin", "dob": "1978-01-30", "gender": "Male" },
+    { "id": 14, "firstName": "Grace", "lastName": "White", "dob": "2000-04-17", "gender": "Female" },
+    { "id": 15, "firstName": "Andrew", "lastName": "Harris", "dob": "1989-08-09", "gender": "Male" },
+    { "id": 16, "firstName": "Chloe", "lastName": "Moore", "dob": "1997-12-22", "gender": "Female" },
+    { "id": 17, "firstName": "Ethan", "lastName": "Clark", "dob": "1981-03-25", "gender": "Male" },
+    { "id": 18, "firstName": "Lily", "lastName": "Baker", "dob": "1996-05-08", "gender": "Female" },
+    { "id": 19, "firstName": "Nathan", "lastName": "Turner", "dob": "1987-09-14", "gender": "Male" },
+    { "id": 20, "firstName": "Sophie", "lastName": "King", "dob": "1994-02-28", "gender": "Female" }
+  ]
+}
